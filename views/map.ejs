@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <title>map</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js"></script>
+  </head>
+  <body class="map-body">
+    <div class="map-page">
+      <a href="/">homepage</a>
+      <a href="/podium">back to podium</a>
+    </div>
+    <div class="plogarea">
+      <form method="POST" action="/map">
+        <input
+          type="text"
+          name="user"
+          value=""
+          placeholder="your mermaid name"
+        />
+        <textarea
+          name="note"
+          value=""
+          class="textarea"
+          placeholder="anything related to mermaid"
+        ></textarea>
+        <input type="submit" name="submitbutton" value="create" />
+        <br />
+        <br />
+        <br />
+
+        <label for="landCheck" class="label">land</label>
+        <input
+          type="checkbox"
+          id="landCheck"
+          class="checkbox"
+          name="landfilter"
+        />
+        <label for="waterCheck" class="label">water</label>
+        <input
+          type="checkbox"
+          id="waterCheck"
+          class="checkbox"
+          name="waterfilter"
+        />
+        <label for="bottleCheck" class="label">bottle</label>
+        <input
+          type="checkbox"
+          id="bottleCheck"
+          class="checkbox"
+          name="bottlefilter"
+        />
+        <label for="shellCheck" class="label">shell</label>
+        <input
+          type="checkbox"
+          id="shellCheck"
+          class="checkbox"
+          name="shellfilter"
+        />
+      </form>
+    </div>
+
+    <!-- Control buttons -->
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')">
+        Show all
+      </button>
+      <button class="btn" onclick="filterSelection('land')">on land</button>
+      <button class="btn" onclick="filterSelection('water')">
+        in the water
+      </button>
+      <button class="btn" onclick="filterSelection('bottle')">
+        drift bottle
+      </button>
+      <button class="btn" onclick="filterSelection('shell')">Sea Shell</button>
+    </div>
+
+    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+    <div class="plog-container" id="filteredResults">
+      <% for(let note of notes){ %>
+      <div class="filterDiv <%= note.classString%>"><%= note.username %></div>
+      <%} %>
+      <!-- <div class="filterDiv land water">plog12</div>
+      <div class="filterDiv bottle">plog11</div>
+      <div class="filterDiv shell">plog10</div>
+      <div class="filterDiv land">plog9</div>
+      <div class="filterDiv land">plog8</div>
+      <div class="filterDiv water">plog7</div>
+      <div class="filterDiv water">plog6</div>
+      <div class="filterDiv land">plog5</div>
+      <div class="filterDiv bottle shell">plog4</div>
+      <div class="filterDiv shell">plog3</div>
+      <div class="filterDiv shell">plog2</div>
+      <div class="filterDiv shell">plog1</div> -->
+    </div>
+
+    <!-- Coding lab use this to check: <p><%= JSON.stringify(notes) %></p> -->
+  </body>
+</html>

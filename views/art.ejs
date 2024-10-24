@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Mermaid</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="artPage">
+    <div class="artsite-page">
+      <div class="homelink"><a href="/">homepage</a></div>
+
+      <p>mermaid hunting:</p>
+
+      <p>collect them in your treasury</p>
+    </div>
+    <div class="app-container">
+      <div class="input-container">
+        <form method="POST" action="/upload" enctype="multipart/form-data">
+          <input type="text" name="text" placeholder="give a clue" />
+          <input type="submit" name="submitbutton" value="Submit" />
+          <input type="file" required="" name="theimage" />
+        </form>
+      </div>
+      <div class="posts-container"><%- include("posts.ejs", {}) %></div>
+    </div>
+  </body>
+</html>
