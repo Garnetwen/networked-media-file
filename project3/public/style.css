@@ -1,0 +1,209 @@
+@font-face {
+  font-family: kuah;
+  src: url(Kuah.otf); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: pacaty;
+  src: url(Pacaty.otf); /* IE9 Compat Modes */
+}
+body {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='70' viewport='0 0 100 100' style='fill:black;font-size:40px;'><text y='50%'>🍴</text></svg>")
+      16 0,
+    auto;
+}
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: pacaty;
+  font-size: 60px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #0d0221;
+}
+a:visited {
+  text-decoration: none;
+}
+#letter {
+  width: 50%;
+}
+.nav-link {
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-style: solid;
+  border-color: black;
+  color: #0d0221;
+  font-size: 55px;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  font-family: kuah;
+  column-gap: 30px;
+}
+.aboutPage {
+  background-color: #c2e7d9;
+}
+.homepage {
+  background-color: #a6cfd5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+}
+.png-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100vh;
+}
+.podiumPage {
+  background-color: #3dbfd3;
+}
+.podium-page {
+  display: flex;
+  font-size: 50px;
+  gap: 100px;
+  flex-direction: row;
+}
+.artPage {
+  background-color: #c2e7d9;
+  font-family: kuah;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homelink {
+  font-family: pacaty;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.helpsitePage {
+  background-color: #0d0221;
+  font-size: 55px;
+  color: #f1f1f1;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-content: space-around;
+  align-items: end;
+}
+.posts-container {
+  font-size: 20px;
+}
+.message-item {
+  width: 30%;
+  align-content: center;
+  height: 30%;
+}
+#mermaid-head {
+  width: 80%;
+}
+.item-image img {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+}
+.container {
+  overflow: hidden;
+}
+p {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+form {
+  margin-bottom: 10px;
+}
+.input-container {
+  border: 10px;
+  font-family: kuah;
+}
+input {
+  border: 30px;
+  color: black;
+  font-size: 18px;
+  font-family: kuah;
+}
+.filterDiv {
+  float: left;
+  background-color: #2196f3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.map-body {
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 10px;
+  justify-content: space-around;
+
+  align-items: center;
+}
+.map-page {
+  display: flex;
+  column-gap: 60px;
+  font-family: pacaty;
+  font-size: 50px;
+}
+.help-content {
+  font-family: pacaty;
+}
+.podium-container {
+  display: flex;
+  justify-content: space-around;
+  font-family: kuah;
+  column-gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+.label {
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+}
+.plog-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+}

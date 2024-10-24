@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>map</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js"></script>
+  </head>
+  <body class="map-body">
+    <div class="map-page">
+      <a href="/">homepage</a>
+      <a href="/podium">back to podium</a>
+    </div>
+    <div id="plogarea">
+      <form method="POST" action="/map">
+        <input
+          type="text"
+          name="user"
+          value=""
+          placeholder="your mermaid name"
+        />
+        <textarea
+          name="note"
+          value=""
+          placeholder="anything related to mermaid"
+        ></textarea>
+        <input type="submit" name="submitbutton" value="create" />
+        <label for="myCheck">land</label>
+        <input type="checkbox" id="myCheck" onclick="myFunction()" />
+        <label for="myCheck">water</label>
+        <input type="checkbox" id="myCheck" onclick="myFunction()" />
+        <label for="myCheck">bottle</label>
+        <input type="checkbox" id="myCheck" onclick="myFunction()" />
+        <label for="myCheck">shell</label>
+        <input type="checkbox" id="myCheck" onclick="myFunction()" />
+      </form>
+    </div>
+
+    <!-- Control buttons -->
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')">
+        Show all
+      </button>
+      <button class="btn" onclick="filterSelection('land')">on land</button>
+      <button class="btn" onclick="filterSelection('water')">
+        in the water
+      </button>
+      <button class="btn" onclick="filterSelection('bottle')">
+        drift bottle
+      </button>
+      <button class="btn" onclick="filterSelection('shell')">Sea Shell</button>
+    </div>
+
+    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+    <div class="plog-container">
+      <div class="filterDiv land">BMW</div>
+      <div class="filterDiv land water">Orange</div>
+      <div class="filterDiv bottle">Volvo</div>
+      <div class="filterDiv shell">Red</div>
+      <div class="filterDiv land">Ford</div>
+      <div class="filterDiv land">Blue</div>
+      <div class="filterDiv water">Cat</div>
+      <div class="filterDiv water">Dog</div>
+      <div class="filterDiv land">Melon</div>
+      <div class="filterDiv bottle shell">Kiwi</div>
+      <div class="filterDiv shell">Banana</div>
+      <div class="filterDiv shell">Lemon</div>
+      <div class="filterDiv shell">Cow</div>
+    </div>
+  </body>
+</html>
