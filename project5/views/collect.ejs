@@ -1,0 +1,41 @@
+<html>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="script.js"></script>
+        <title>cabinet</title>
+      </head>
+      <body id="collectbody">
+        
+        <div class="shelf">
+       
+            <div class="firstCollectedFish">
+              <div id="netfishid" class="netfish">  <img src="uploads/net.png" id="netid" class="net" alt="  ">
+                <img id="collectedFishImage" src="" alt="empty for fish" onclick="statusPopup(event)" ondblclick="moveTemple(event)">
+                <div class="statusPopUp" ><p id="fishCurrentStatus"></p></div>
+            </div>
+            
+                <p id="collectFishtext" ></p>
+            </div>
+            <div class="secondCollectedFish" > 
+              <img src="uploads/net.png" id="netid" class="net" alt="  ">
+              <img id="collectedSecondFishImage" src="" alt="empty for socks" onclick="statusPopup(event)" ondblclick="moveTemple(event)">
+              <p id="collectSecondFishtext" ></p>
+            <div class="statusPopUp" ><p id="fishSecondCurrentStatus"></p></div>
+            <p id="collectSecondFishtext" ></p>
+            </div>
+  
+            <div class="thirdCollectedFish" >
+              <img src="uploads/net.png" id="netid" class="net" alt="  ">
+              <img id="collectedThirdFishImage" src="" alt="empty for other stuff" onclick="statusPopup(event)" ondblclick="moveTemple(event)">
+            <p id="collectThirdFishtext" ></p>
+            <div class="statusPopUp" ><p id="fishThirdCurrentStatus"></p</div> 
+            </div>
+          </div>
+          
+          
+        </div>
+        <div class="returnbtn">
+          <a href="fishingSite" ><img src="uploads/fishingSite.png" id="returnFish"></a>
+        </div>
+    
+</html>
+

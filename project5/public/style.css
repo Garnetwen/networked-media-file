@@ -1,0 +1,189 @@
+@font-face {
+  font-family: Aquas;
+  src: url(Aquas.ttf); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: pacaty;
+  src: url(Pacaty.otf); /* IE9 Compat Modes */
+}
+
+#fishPage {
+  display: none;
+  background-color: aqua;
+}
+.statusPopUp {
+  display: none;
+  width: 40%;
+}
+.statusPopUp.show {
+  display: flex;
+}
+html,
+body {
+  margin: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-image: url(uploads/background.jpg);
+}
+/* index.ejs */
+#dockbody {
+  text-align: center;
+
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#fishSite {
+  height: 40vh;
+}
+#templeSite {
+  height: 45vh;
+}
+#collectSite {
+  height: 50vh;
+  width: 40vh;
+  object-fit: cover;
+}
+
+/* FishingSite.ejs */
+#fishSitebody {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+#fishPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+#fishimage {
+  width: 30vh;
+  height: 30vh;
+}
+#returnLink {
+  display: flex;
+  flex-direction: row;
+}
+#returnCabinet {
+  width: 40vh;
+
+  height: 30vh;
+}
+#fishingBody {
+  background-image: url(uploads/fishingBackgrd.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#cabinetid {
+  width: 30vh;
+}
+#dockimg {
+  width: 30vh;
+  /* transform: rotate(90deg); */
+  height: 30vh;
+}
+.btn {
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  font-family: Aquas;
+}
+#fishWarning {
+  color: darkcyan;
+}
+/* collect.ejs */
+#collectbody {
+  background-image: url(uploads/fishingBackgrd.png);
+}
+.shelf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+#returnFish {
+  width: 30vh;
+}
+.shelf img {
+  width: 20vh;
+  font-size: 40px;
+  font-family: Pacaty;
+}
+.returnbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* temple.ejs */
+#templeResponse {
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  font-family: Aquas;
+}
+#responseOutput {
+  font-size: 40px;
+  color: beige;
+  font-family: pacaty;
+  margin: 10px;
+}
+#templeBody {
+  background-image: url(uploads/cabinetBackgrd.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Aquas;
+}
+#templeImage {
+  width: 40%;
+}
+#templediv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#backdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cabinetLink {
+  font-family: Aquas;
+  color: aqua;
+}
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+a:link {
+  color: black;
+  text-decoration: none;
+}
+p {
+  font-size: 20px;
+  font-family: Aquas;
+}
+#c {
+  width: 10%;
+  -webkit-filter: invert(100%); /* Safari/Chrome */
+  filter: invert(100%);
+}
